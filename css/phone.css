@@ -1,0 +1,60 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#navbar img{
+    display: block;
+    margin: auto;
+}
+
+/* Home Section */
+#home .h1{
+    overflow: hidden;
+}
+
+#home p{
+    font-size: 1rem;
+}
+
+/* Services */
+#services{
+    flex-direction: column;
+    margin: 25px;
+}
+
+#services .box{
+    margin: 6px 0px;
+}
+
+/* Clinte */
+.clint-item {
+    padding: 12px 9px;
+}
+
+#clints img {
+    width: 35px;
+}
+
+#clint-section {
+    margin: 20px 0px;
+}
+
+/* Contact */
+#contact-box form {
+    width: 80%;
+}
+#contact h1 {
+    padding-top: 23px;
+    padding-bottom: 10px;
+}
+
+/* Utility Clases */
+.h-primary{
+    font-size: 2rem;
+}

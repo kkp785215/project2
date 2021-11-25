@@ -1,0 +1,275 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --primary-color: red;
+    --secondary-color: black;
+    --primary-font: black;
+    --secondary-font: white;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+/* Navigation Bar: Logo and Image */
+#navbar img{
+    width: 73px;
+    padding: 2px 3px;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+} 
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 5px 22px;
+}
+
+#navbar ul li a:hover{
+    color: red;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 567px ;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../img/bg1.jpg')  no-repeat center center/cover;
+    opacity: 0.90;
+    z-index: -1;
+    height: 600px;
+    width: 100%;
+}
+
+#home .btn{
+    color: white;
+    border: 1px solid white;
+    border-radius:5px;
+    padding: 8px 46px;
+    margin: 16px 0px;
+    background-color: brown;
+    cursor: pointer;
+}
+
+#home .btn:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+#home p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+#home h1{
+    color: white;
+}
+
+@media screen and (max-width:286px){
+    #home h1{
+        font-size: 1.3rem;
+    } 
+}
+
+/* Services Classes */
+#services{
+    display: flex;
+    margin: 34px;
+}
+
+#services img{
+    width: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box{
+    border: 2px solid red;
+    background-color: #f7ecec;
+    margin: 0px 10px;
+    padding: 20px;
+    border-radius: 23px;
+}
+
+/* Clints Section  */
+#clint-section{
+    position: relative;
+    margin: 42px 0px;
+    overflow: hidden;
+}
+
+#clint-section h1{
+    padding-top: 30px;
+}
+
+#clint-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg.jpg');
+    opacity: 0.4;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.clint-item{
+    padding: 34px;
+}
+
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clints img{
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/contact.jpg)no-repeat center, center / cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+   width: 32%;
+}
+
+@media (min-width: 425px) and (max-width: 1080px){
+    #contact-box form {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#contact-box .btn{
+    margin-top: 23px !important;
+    margin: auto;
+    padding: 17px 19px;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    cursor: pointer;
+}
+
+#contact-box .btn:hover{
+    background-color: rgb(192, 192, 192);
+}
+
+#contact-box form label{
+    font-size: 1.3rem;
+    font-family: monospace;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+#contact-box form input{
+    font-size: 1.2rem;
+    font-family: monospace;
+    padding: 5px 0px;
+}
+
+#contact-box form textarea{
+    font-size: 1.3rem;
+    font-family: monospace;
+    padding: 5px 0px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    padding: 23px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a{
+   text-decoration: none;
+   color: cadetblue;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family:  cursive, Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+    
+.h-secondary{
+    font-family:  cursive, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+a:hover{
+color: blue;
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+}
+
+.center{
+    text-align: center;
+}

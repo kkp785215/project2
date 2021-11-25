@@ -1,0 +1,32 @@
+/* Navigation */
+#navbar ul{
+    flex-wrap: wrap;
+}
+
+/* Home Section */
+
+/* Services */
+#services {
+    flex-wrap: wrap;
+}
+
+#services .box {
+    margin: 10px 10px;
+    justify-content: center;
+    flex-grow: 2;
+    width: 233px;
+}
+
+/* Clinte */
+.clint-item {
+    padding: 21px;
+}
+
+#clints img {
+    width: 58px;
+}
+
+/* Contact */
+#contact-box form {
+    width: 80%;
+}
